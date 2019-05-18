@@ -35,7 +35,6 @@ mas 'Battery Health', id: 490192174
 mas 'DevCleaner', id: 1388020431
 mas 'GIPHY CAPTURE', id: 668208984
 mas 'OneDrive', id: 823766827
-mas 'Sip', id: 507257563
 mas 'Snap', id: 418073146
 mas 'TweetDeck', id: 485812721
 mas '1Password', id: 1333542190

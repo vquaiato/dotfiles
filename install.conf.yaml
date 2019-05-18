@@ -3,22 +3,22 @@
 - shell:
     -
         command: 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
+        description: Install oh-my-zsh
         stdin: true
         stdout: true
         stderr: true
-        description: Install oh-my-zsh
     -
         command: "rm -f ~/.zshrc && ln -s ~/.dotfiles/zshrc ~/.zshrc"
+        description: Overwrite oh-my-zsh default .zshrc template
         stdin: true
         stdout: true
         stderr: true
-        description: Overwrite oh-my-zsh default .zshrc template
     -
         command: brew --version || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        description: Install Homebew
         stdin: true
         stdout: true
         stderr: true
-        description: Install Homebew
     -
         command: brew update
         description: Update Homebrew
@@ -28,10 +28,10 @@
     # Install Bundle to be able to use Brewfile
     -
         command: brew tap homebrew/bundle
+        description: Install Bundle formula
         stdin: true
         stdout: true
         stderr: true
-        description: Install Bundle formula
     -
         command: brew bundle
         description: Install Brew formulas and casks
@@ -67,6 +67,6 @@
     ~/.spacemacs: 
         force: true
         path: 'spacemacs'
-    ~/.zshrc: 
-        force: true
-        path: 'zshrc'
+    # ~/.zshrc: 
+    #     force: true
+    #     path: 'zshrc'

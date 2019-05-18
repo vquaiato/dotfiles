@@ -1,12 +1,5 @@
 - clean: ['~']
 
-- link:
-    ~/.gitconfig: gitconfig
-    ~/.spacemacs: spacemacs
-    ~/.zshrc: 
-        force: true
-        path: 'zshrc'
-
 - shell:
     -
         command: 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
@@ -49,7 +42,7 @@
         command: "source .macos"
         description: Set macOS preferences
     -
-        command: git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" && ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+        command: mkdir themes && git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" && ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
         description: Download Spaceship ZSH Prompt
         stdin: true
         stdout: true
@@ -66,3 +59,14 @@
         stdin: true
         stdout: true
         stderr: true
+
+- link:
+    ~/.gitconfig: 
+        force: true
+        path: 'gitconfig'
+    ~/.spacemacs: 
+        force: true
+        path: 'spacemacs'
+    ~/.zshrc: 
+        force: true
+        path: 'zshrc'

@@ -37,7 +37,7 @@ mas 'GIPHY CAPTURE', id: 668208984
 mas 'OneDrive', id: 823766827
 mas 'Snap', id: 418073146
 mas 'TweetDeck', id: 485812721
-mas '1Password', id: 1333542190
+#mas '1Password', id: 1333542190
 mas 'Kindle', id: 405399194
 mas 'Magnet', id: 441258766
 mas 'Amphetamine', id: 937984704

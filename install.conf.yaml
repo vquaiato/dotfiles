@@ -2,6 +2,7 @@
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.spacemacs: spacemacs
     ~/.zshrc: 
         force: true
         path: 'zshrc'
@@ -50,3 +51,15 @@
     -
         command: git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" && ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
         description: Download Spaceship ZSH Prompt
+    -
+        command: ln -s /usr/local/Cellar/emacs-plus/*/Emacs.app/ /Applications/
+        description: Puts Spacemacs into /Applications/
+        stdin: true
+        stdout: true
+        stderr: true
+    - 
+        command: git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+        description: Clone Spacemacs
+        stdin: true
+        stdout: true
+        stderr: true

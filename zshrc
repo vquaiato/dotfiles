@@ -21,7 +21,7 @@ ZSH_THEME="spaceship"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=1
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -52,7 +52,15 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-prompt z zsh-syntax-highlighting)
+plugins=(git
+         git-prompt
+         colored-man-pages
+         history
+         lein
+         osx
+         z
+         zsh-syntax-highlighting
+         zsh-autosuggestions)
 
 # User configuration
 
@@ -87,6 +95,5 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# export PATH=/Users/Mahmoud/.node/bin:/Users/Mahmoud/.dnx/runtimes/dnx-coreclr-darwin-x64.1.0.0-rc1-final/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet/
 
 SPACESHIP_GIT_STATUS_STASHED=

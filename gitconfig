@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/Mahmoud/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = code --wait
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -8,8 +8,8 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = Mahmoud Ali
-	email = muddibr@gmail.com
+	name = Vinicius Quaiato
+	email = vinicius.quaiato@gmail.com
 [color]
     diff = always
     interactive = always

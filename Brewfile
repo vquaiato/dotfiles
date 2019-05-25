@@ -16,6 +16,7 @@ brew 'emacs-plus'
 # Development
 cask 'sourcetree'
 cask 'visual-studio-code'
+cask 'font-fira-code'
 
 # Apps
 cask 'font-source-code-pro'

@@ -58,9 +58,7 @@ plugins=(git
          history
          lein
          osx
-         z
-         zsh-syntax-highlighting
-         zsh-autosuggestions)
+         z)
 
 # User configuration
 
@@ -70,6 +68,7 @@ plugins=(git
 source $ZSH/oh-my-zsh.sh
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

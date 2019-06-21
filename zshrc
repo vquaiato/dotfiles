@@ -62,7 +62,6 @@ plugins=(git
 
 # User configuration
 
-# export PATH="/Users/Mahmoud/.node/bin:/Users/Mahmoud/.dnx/runtimes/dnx-coreclr-darwin-x64.1.0.0-rc1-final/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/bin/:/Users/Mahmoud/Library/Developer/Xamarin/android-sdk-macosx/platform-tools”
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -94,5 +93,7 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH="$PATH:$HOME/bin"
 
 SPACESHIP_GIT_STATUS_STASHED=

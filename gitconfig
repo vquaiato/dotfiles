@@ -11,7 +11,7 @@
 	name = Vinicius Quaiato
 	email = vinicius.quaiato@gmail.com
 [color]
-    diff = always
+    diff = auto
     interactive = always
     status = always
     branch = always
@@ -52,3 +52,12 @@
     abbrevCommit = true
 [format]
     pretty=format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[diff]
+	noprefix = false

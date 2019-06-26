@@ -46,12 +46,9 @@ values."
      org
      colors
      themes-megapack
-     clojure
      java
      helm
      version-control
-     paredit
-     cider
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these

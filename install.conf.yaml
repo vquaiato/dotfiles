@@ -60,6 +60,13 @@
         stdout: true
         stderr: true
 
+    - 
+        command: git config --global core.excludesfile ~/.gitignore
+        description: Configure gitignore
+        stdin: true
+        stdout: true
+        stderr: true
+
 - link:
     ~/.gitconfig: 
         force: true
@@ -67,6 +74,6 @@
     ~/.spacemacs: 
         force: true
         path: 'spacemacs'
-    # ~/.zshrc: 
-    #     force: true
-    #     path: 'zshrc'
+    ~/.ignore: 
+        force: true
+        path: 'gitignore'

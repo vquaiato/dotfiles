@@ -12,6 +12,7 @@ brew 'mas'
 brew 'node'
 brew 'elixir'
 brew 'emacs-plus'
+brew 'tree'
 
 # Development
 cask 'sourcetree'

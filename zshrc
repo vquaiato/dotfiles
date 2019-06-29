@@ -58,18 +58,20 @@ plugins=(git
          history
          lein
          osx
-         z
-         zsh-syntax-highlighting
-         zsh-autosuggestions)
+         z)
 
 # User configuration
 
-# export PATH="/Users/Mahmoud/.node/bin:/Users/Mahmoud/.dnx/runtimes/dnx-coreclr-darwin-x64.1.0.0-rc1-final/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/bin/:/Users/Mahmoud/Library/Developer/Xamarin/android-sdk-macosx/platform-tools”
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#SPACESHIP CONFIGS
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_BATTERY_THRESHOLD=30
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -95,5 +97,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH="$PATH:$HOME/bin"
 
 SPACESHIP_GIT_STATUS_STASHED=

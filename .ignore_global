@@ -5,3 +5,5 @@
 bin
 obj
 debug
+
+.elixir_ls/
